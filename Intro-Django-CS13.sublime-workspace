@@ -569,6 +569,15 @@
 	],
 	"file_history":
 	[
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/notes/admin.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/Pipfile.lock",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/djorg/urls.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/djorg/settings.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/.env",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/notes/views.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/notes/models.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/.gitignore",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/Pipfile",
 		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/TEST",
 		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django/Pipfile",
 		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django/notes/models.py",
@@ -687,16 +696,7 @@
 		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/test.py",
 		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/ElementTrailManager.cs",
 		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/menus/GameMenu.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/CurrencyManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/ui/ButtonHold.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/ServerManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/ui/Meter.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/MeterManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/ButtonManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/menus/FlowerMenu.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/GardenManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/BlockPairManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/effects/Gem.cs"
+		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/CurrencyManager.cs"
 	],
 	"find":
 	{
@@ -789,12 +789,24 @@
 		"selected_items":
 		[
 			[
-				"sett",
-				"djorg/settings.py"
+				"notes.a",
+				"notes/admin.py"
+			],
+			[
+				"view",
+				"notes/views.py"
 			],
 			[
 				"model",
 				"notes/models.py"
+			],
+			[
+				"sett",
+				"djorg/settings.py"
+			],
+			[
+				"urls",
+				"djorg/urls.py"
 			],
 			[
 				".giti",
@@ -891,10 +903,6 @@
 			[
 				"pusherbase",
 				"adv/templates/adv/pusher_base.html"
-			],
-			[
-				"urls",
-				"adv/urls.py"
 			],
 			[
 				"views",
@@ -1291,14 +1299,6 @@
 			[
 				"floa",
 				"effects/FloatingText.cs"
-			],
-			[
-				"mana",
-				"managers/MainManager.cs"
-			],
-			[
-				"menum",
-				"managers/MenuManager.cs"
 			]
 		],
 		"width": 0.0
