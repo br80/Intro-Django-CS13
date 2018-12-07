@@ -519,6 +519,58 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "class Test:\n  def __init__(self, value):\n    self.value = value\n\n\ncontainer = {}\n\n\nchar *str = malloc(sizeof(char) * 8);\nstr = 'changed';\n\n\n\nclass NodeObj:\n  def __init__(self, val):\n    self.val = val\n\nbook = [None] * 5\n\nbook[0] = 'value 0'\nbook[1] = 'value 1'\nbook[2] = 'value 2'\nbook[3] = NodeObj('value 3')\nbook[4] = 'value 4'\n\n\n\nObject **book = calloc(5, sizeof(Object *))\n\nbook[0] = malloc(sizeof(char) * 8);\nbook[0] = 'value 0'\n\nbook[1] = malloc(sizeof(char) * 8);\nbook[1] = 'value 1'\n\nbook[2] = malloc(sizeof(NodeObj));\nbook[2].set_value(\"value 3\");\n\nbook[3] = malloc(sizeof(char) * 8);\nbook[3] = 'value 0'\n\nbook[4] = malloc(sizeof(char) * 8);\nbook[4] = 'value 0'",
+			"settings":
+			{
+				"buffer_size": 671,
+				"line_ending": "Unix",
+				"name": "class Test:"
+			}
+		},
+		{
+			"file": "notes/api.py",
+			"settings":
+			{
+				"buffer_size": 762,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\"\"\"djorg URL Configuration\n\nThe `urlpatterns` list routes URLs to views. For more information please see:\n    https://docs.djangoproject.com/en/2.1/topics/http/urls/\nExamples:\nFunction views\n    1. Add an import:  from my_app import views\n    2. Add a URL to urlpatterns:  path('', views.home, name='home')\nClass-based views\n    1. Add an import:  from other_app.views import Home\n    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')\nIncluding another URLconf\n    1. Import the include() function: from django.urls import include, path\n    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))\n\"\"\"\nfrom django.contrib import admin\nfrom django.urls import path, include, re_path\nfrom rest_framework.authtoken import views\n\nfrom rest_framework import routers\nfrom notes.api import PersonalNoteViewSet\n\nrouter = routers.DefaultRouter()\nrouter.register(r'notes', PersonalNoteViewSet)\n\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include(router.urls)),\n    re_path(r'^api-token-auth/', views.obtain_auth_token),\n]\n",
+			"file": "djorg/urls.py",
+			"file_size": 1066,
+			"file_write_time": 131885277335525907,
+			"settings":
+			{
+				"buffer_size": 1066,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/bradyfukumoto/Desktop/git/lambda_local/LambdaMUD-CS12/requirements.txt",
+			"settings":
+			{
+				"buffer_size": 570,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 74,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 25,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -569,6 +621,17 @@
 	],
 	"file_history":
 	[
+		"/Users/bradyfukumoto/.local/share/virtualenvs/Intro-Django-CS13-l7vZlwvX/lib/python3.7/site-packages/decouple.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/djorg/urls.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/notes/api.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/djorg/settings.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/notes/admin.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/notes/models.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/Pipfile.lock",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/.env",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/notes/views.py",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/.gitignore",
+		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/Pipfile",
 		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django-CS13/TEST",
 		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django/Pipfile",
 		"/Users/bradyfukumoto/Desktop/git/lambda_local/Intro-Django/notes/models.py",
@@ -685,22 +748,11 @@
 		"/Users/bradyfukumoto/Desktop/git/lambda/Intro-Python/src/day-1-toy/hello.py",
 		"/Users/bradyfukumoto/Desktop/git/lambda/Intro-Python/.gitignore",
 		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/test.py",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/ElementTrailManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/menus/GameMenu.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/CurrencyManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/ui/ButtonHold.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/ServerManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/ui/Meter.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/MeterManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/ButtonManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/menus/FlowerMenu.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/GardenManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/BlockPairManager.cs",
-		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/effects/Gem.cs"
+		"/Users/bradyfukumoto/Desktop/git/BlockGame/Assets/scripts/managers/ElementTrailManager.cs"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
@@ -731,14 +783,193 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 671,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								593,
+								593
+							]
+						],
+						"settings":
+						{
+							"auto_name": "class Test:",
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 164.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "notes/api.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								550,
+								550
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "djorg/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1066,
+								1066
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/bradyfukumoto/Desktop/git/lambda_local/LambdaMUD-CS12/requirements.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								570,
+								570
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": ".env",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 74,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								74,
+								74
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -779,7 +1010,7 @@
 	"project": "Intro-Django-CS13.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -789,12 +1020,52 @@
 		"selected_items":
 		[
 			[
-				"sett",
+				"",
+				"djorg/urls.py"
+			],
+			[
+				"api",
+				"notes/api.py"
+			],
+			[
+				"urls",
+				"djorg/urls.py"
+			],
+			[
+				"set",
 				"djorg/settings.py"
+			],
+			[
+				"ad",
+				"notes/admin.py"
+			],
+			[
+				"admin",
+				"notes/admin.py"
 			],
 			[
 				"model",
 				"notes/models.py"
+			],
+			[
+				"sett",
+				"djorg/settings.py"
+			],
+			[
+				"pipe",
+				"Pipfile.lock"
+			],
+			[
+				"model.",
+				"notes/models.py"
+			],
+			[
+				"notes.a",
+				"notes/admin.py"
+			],
+			[
+				"view",
+				"notes/views.py"
 			],
 			[
 				".giti",
@@ -891,10 +1162,6 @@
 			[
 				"pusherbase",
 				"adv/templates/adv/pusher_base.html"
-			],
-			[
-				"urls",
-				"adv/urls.py"
 			],
 			[
 				"views",
@@ -1241,10 +1508,6 @@
 				"effects/VortexStream.cs"
 			],
 			[
-				"",
-				"managers/ButtonManager.cs"
-			],
-			[
 				"buttonh",
 				"ui/ButtonHold.cs"
 			],
@@ -1267,38 +1530,6 @@
 			[
 				"floatingtex",
 				"managers/FloatingTextManager.cs"
-			],
-			[
-				"floatingt",
-				"effects/FloatingText.cs"
-			],
-			[
-				"options",
-				"menus/OptionsMenu.cs"
-			],
-			[
-				"textman",
-				"managers/TextManager.cs"
-			],
-			[
-				"blockcontr",
-				"managers/BlockControlManager.cs"
-			],
-			[
-				"floatingtextman",
-				"managers/FloatingTextManager.cs"
-			],
-			[
-				"floa",
-				"effects/FloatingText.cs"
-			],
-			[
-				"mana",
-				"managers/MainManager.cs"
-			],
-			[
-				"menum",
-				"managers/MenuManager.cs"
 			]
 		],
 		"width": 0.0
