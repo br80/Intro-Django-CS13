@@ -14,7 +14,7 @@ class PersonalNoteSerializer(serializers.HyperlinkedModelSerializer):
 
 class PersonalNoteViewSet(viewsets.ModelViewSet):
     serializer_class = PersonalNoteSerializer
-    queryset = PersonalNote.objects.all()
+    queryset = PersonalNote.objects.all().order_by('created_at')
 
     def get_queryset(self):
         user = self.request.user
@@ -22,4 +22,4 @@ class PersonalNoteViewSet(viewsets.ModelViewSet):
         if user.is_anonymous:
             return PersonalNote.objects.none()
         else:
-            return PersonalNote.objects.order_by('created_at').filter(user=user)
+            return PersonalNote.objects.filter(user=user)
